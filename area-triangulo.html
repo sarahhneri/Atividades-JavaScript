@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Area do triangulo </title>
+</head>
+<body>
+	
+	<script>
+		function calcularAreaTriangulo(base, altura) {
+				return (base * altura) / 2;
+			}
+
+			// Exemplo de uso da função
+			var baseTriangulo = Number(prompt("Digite o valor da base do triângulo: ")); // Exemplo de base do triângulo
+			var alturaTriangulo = Number(prompt("Digite o valor da altura do triângulo: ")); // Exemplo de altura do triângulo
+			var areaTriangulo = calcularAreaTriangulo(baseTriangulo, alturaTriangulo);
+
+			alert("A área do triângulo é: " + areaTriangulo);
+
+	</script>
+</body>
+</html>

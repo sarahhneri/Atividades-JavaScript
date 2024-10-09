@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nível de experiencia</title>
+</head>
+
+<body>
+
+	<script>
+		let totalAnosEstudo = Number(prompt("Digite quantos anos você estuda programação: "))
+
+		function anosEstudo(totalAnos) {
+			if (totalAnos < 0) {
+				return "Valor inválido";
+			} else if (totalAnos == 0) {
+				return "Sem experiência";
+			} else if (totalAnos > 0 && totalAnos <= 3) {
+				return "Iniciante";
+			} else if (totalAnos > 3 && totalAnos <= 6) {
+				return "Intermediário";
+			} else if (totalAnos > 6 && totalAnos <= 10) {
+				return "Avançado";
+			} else {
+				return "Especialista";
+			}
+		}
+
+		// Exemplo de uso da função
+		const experiencia = anosEstudo(totalAnosEstudo);
+		alert("Experiência: " + experiencia);
+
+	</script>
+</body>
+
+</html>
