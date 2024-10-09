@@ -1,1 +1,1 @@
-# AtividadesJavaScript
+# Atividades-JavaScript
