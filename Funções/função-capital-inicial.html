@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Taxa Mensal </title>
+</head>
+<body>
+	
+	<script>
+		function calcularMontante(capitalInicial, taxaJurosMensal, tempoMeses) {
+				const montante = capitalInicial * Math.pow(1 + taxaJurosMensal, tempoMeses);
+				return montante;
+			}
+
+			// Exemplo de uso da função
+			const capitalInicial = Number(prompt("Digite o capital inicial:")); // Exemplo de capital inicial
+			const taxaJurosMensal = Number(prompt("Digite a taxa de juros mensal:")); // Exemplo de taxa de juros mensal (2% ao mês)
+			const tempoMeses = Number(prompt("Digite o tempo em meses")); // Exemplo de tempo em meses (1 ano)
+
+			const montanteInvestimento = calcularMontante(capitalInicial, taxaJurosMensal, tempoMeses);
+			alert("O montante do investimento após " + tempoMeses + " meses é: R$" + montanteInvestimento.toFixed(2));
+
+	</script>
+</body>
+</html>

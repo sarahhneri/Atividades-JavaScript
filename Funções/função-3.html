@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perímetro do circulo</title>
+</head>
+<body>
+	<script>
+		function calcularAreaEPerimetroDoCirculo(raio) {
+				const pi = Math.PI;
+				const area = pi * raio ** 2;
+				const perimetro = 2 * pi * raio;
+
+				return {
+					area: area,
+					perimetro: perimetro
+				};
+			}
+
+			// Exemplo de uso da função
+			const raioCirculo = Number(prompt("Digite o raio do círculo: ")); // Exemplo de raio do círculo
+			const resultados = calcularAreaEPerimetroDoCirculo(raioCirculo);
+
+			alert("Área do círculo: " + resultados.area.toFixed(2));
+			alert("Perímetro do círculo: " + resultados.perimetro.toFixed(2));
+
+	</script>
+	
+</body>
+</html>

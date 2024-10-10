@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Botão JS</title>
+</head>
+
+<body>
+
+	Digite a temperatura em Fahrenheit: <input type="text" id="tempFahrenheit">
+	<button onclick="converterFahrenheitParaCelsius()">Converter</button>
+	<br>
+	<p id="resultado"></p>
+
+	<script>
+
+function converterFahrenheitParaCelsius() {
+			var tempFahrenheit = parseFloat(document.getElementById('tempFahrenheit').value);
+
+
+			if (!isNaN(tempFahrenheit)) {
+				var tempCelcius = (tempFahrenheit - 32) * (5 / 9);
+				document.getElementById('resultado').innerText = tempFahrenheit + "graus Fahrenheit equivalem a " + tempCelcius.toFixed(2) + "graus Celsius";
+
+			} else {
+				document.getElementById('resultado').innerText = "Por favor, insira uma temperatura válida.";
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
